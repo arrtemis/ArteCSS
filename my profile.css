@@ -1,48 +1,42 @@
+/*old css meets new one*/
+
 /*Imports*/
 @import url("https://anzuftnw.github.io/files/user-badges.css");
 
-/* settings for everything*/
 :root, .site-theme-dark, .site-theme-contrast{
 /*badge settings*/
-    --badge-background: rgb(var(--color-background));                         /* background color */
+    --badge-background: rgb(var(--color-silver));                         /* background color */
     --badge-color: rgb(var(--color-text));                                    /* text color */
     --badge-rounding: 3px;                                                    /* corner rounding */
     --badge-font: Overpass;                                                   /* font */
 
-/* colors */    
-    --color-background: 0,0,0,.5;
+/* colors */
+    --color-silver: 246, 246, 246;
     --color-foreground: 0,0,0,.5;
     --color-foreground-grey: 0,0,0,.5;
     --color-foreground-grey-dark: 0,0,0,0.5;
-    --color-text: #358EDA;
-    --color-text-light: #2E87DA;
-    --color-text-lightest: #2E87FF;
-    --color-background-100: 0,0,0,.5;
-    --color-background-200: 0,0,0,.5;
-    --color-gray-100: #358EDA;
-    --color-gray-600: #358EDA;
-    --color-gray-700: #358EDA;
-    --color-gray-800: #2E87FF;
-    --color-gray-900: #2E87FF;
+    --color-text: 53, 142, 218;
+    --color-text-ash: 210,213,216;
+    --color-text-light: 46,135,218;
+    --color-text-lightest: 46, 135, 255;
     /*--color-green: var(--color-text-lightest);*/
-}  
+} 
 
-/* background */
+/*background*/
 body {
     background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-background),0.8)), url(https://i.imgur.com/HDUpxWD.jpeg) center/100% fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* banner */
+/*banner*/
 .banner[data-v-1cc2919e]{
-    background-image: none !important;
+    background-image: none !important;  
     background-color: rgb(36,37,56,0);
 }
 .banner .avatar {
     order: 0;
 }
-
 .banner .banner-content::after {
     content: "三玖";
     background: rgba(var(--color-blue),.7);
@@ -64,38 +58,6 @@ body {
     order: 4;
 }
 
-/* navbar */
-#nav {
-    background: rgba(0,0,0,.5);
-    color: rgb(var(--color-text));
-    top: 0 !important;
-    border-bottom: 1px solid rgb(81, 185, 245);
-}
-
-.nav-wrap {
-    border-top: 1px solid rgb(81, 185, 245);
-    border-bottom: 1px solid rgb(81, 185, 245); 
-}
-
-.logo img {
-    content: url("https://cdn.discordapp.com/emojis/541528618518446090.gif");
-    width: 50px !important;
-    height: 50px !important;
-    transition: 1s linear;
-}
-.logo img:hover {
-    transform: rotate(360deg);
-}
-#nav .link:hover {
-    color: rgb(var(--color-text-lightest))
-}
-.transparent .search svg {
-    color: rgb(var(--color-text)) !important;
-}
-.quick-search {
-    background: rgba(40,30,30,.5) !important;
-}
-
 /* badges */
 .header > .name:after {content: "Lurker";}                                              /* badge for everyone */
 .header > a[href="/user/Artemis/"].name:after {content: "Cringe Lord";}                 /* badge for me */
@@ -104,7 +66,7 @@ body {
 .header > a[href="/user/Anzu/"].name:before {content: "Mr.";}                           /* prefix for user anzu */
 .header > a[href="/user/Anzu/"].name:after {content: "Certified Nerd 📚";}              /* badge for anzu */
 .header > a[href="/user/Elvedin/"].name:after {content: "Besto friendo";}               /* badge for elve */
-.header > a[href="/user/kartsydai/"].name:after {content: "also besto friendo";}        /* badge for kart */
+.header > a[href="/user/Kartsydai/"].name:after {content: "also besto friendo";}        /* badge for kart */
 .header > a[href="/user/Kanjo/"].name:after {content: "Elder";}                         /* badge for Kanjo */
 .header > a[href="/user/Robiracer/"].name:after {content: "wobby wobby";}               /* badge for wobby */
 .header > a[href="/user/leilana/"].name:after {content: "esteemed designer guest";}     /* badge for leilana */
@@ -121,12 +83,11 @@ body {
 .header > a[href="/user/CelestialQueen/"].name:after {content: "Esteemed Reviewer";}
 .header > a[href="/user/celeoste/"].name:after {content: "Esteemed Reviewer";}
 
-/* names */
+/*names*/
 .name[data-v-1cc2919e]{
     font-family: stay in square;
-    font-size: 55px;
+    font-size: 60px;
     margin: 0;
-    filter: drop-shadow(0px 0px 6px aqua);
 }
 .name[data-v-77aecf0c]{
     font-family: Overpass;
@@ -137,6 +98,48 @@ body {
     max-height: none !important;
     background: rgba(0,0,0,.8);
 }
+
+/* Chrome scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #01232d;
+}
+::-webkit-scrollbar-corner {
+    background: #01232d;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6f00;
+    --webkit-border-radius: 1ex;
+}
+
+/*Hides hoh download button*/
+.hohDownload {
+    display: none;
+}
+
+/* navbar */
+#nav {
+    background: rgba(0,0,0,.5);
+    color: rgb(var(--color-text));
+    top: 0 !important;
+    border-bottom: 1px solid rgb(81, 185, 245);
+}
+
+.nav-wrap {
+    border-top: 1px solid rgb(81, 185, 245);
+    border-bottom: 1px solid rgb(81, 185, 245); 
+}
+
+#nav .link:hover {
+    color: rgb(var(--color-text-lightest))
+}
+.transparent .search svg {
+    color: rgb(var(--color-text)) !important;
+}
+.quick-search {
+    background: rgba(40,30,30,.5) !important;
+}
+
 
 /* content */
 .list-stats, .about > .content-wrap, .activity-entry > .wrap, .genre-overview, .activity-history, .load-more, .el-textarea, .markdown-editor, .favourites-wrap, .reply {
@@ -238,23 +241,4 @@ body {
 a:hover {
     color: rgb(var(--color-text-lightest));
 }
-.hohColourPicker, .hohDismiss, .hohDownload {
-    display: none;
-}
 
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 4px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgb(var(--color-text-lightest));
-    border-radius: 50px;
-  }
-  body::-webkit-scrollbar-track {
-    background: black;
-  }
-
-/* Hides hoh download button */
-.hohDownload {
-    display: none;
-}
