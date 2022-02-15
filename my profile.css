@@ -223,6 +223,7 @@ body {
 .wrap > .time {
     color: rgb(var(--color-text));
 }
+
 /* footer */
 #app .wrap .footer {
     background: rgb(var(--color-foreground));
@@ -248,38 +249,18 @@ a:hover {
 .hohColourPicker, .hohDismiss, .hohDownload {
     display: none;
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgb(var(--color-text-lightest));
-  border-radius: 50px;
-}
-body::-webkit-scrollbar-track {
-  background: black;
-}
-
-/* notifications page fix ? */
-#app {
-    margin-top: 0;
-}
-.notifications-feed.container {
-    margin-top: 142px !important;
-}
-
-/* Chrome scrollbar */
-::-webkit-scrollbar {
-    width: 6px;
-    background: #01232d;
-}
-::-webkit-scrollbar-corner {
-    background: #01232d;
-}
-::-webkit-scrollbar-thumb {
-    background: #ff6f00;
-    --webkit-border-radius: 1ex;
-}
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-text-lightest));
+    border-radius: 50px;
+  }
+  body::-webkit-scrollbar-track {
+    background: black;
+  }
 
 /* Hides hoh download button */
 .hohDownload {
