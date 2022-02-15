@@ -1,12 +1,10 @@
-/*old css meets new one*/
-
-/*Imports*/
+/* Imports */
 @import url("https://anzuftnw.github.io/files/user-badges.css");
 
 :root, .site-theme-dark, .site-theme-contrast{
 /*badge settings*/
-    --badge-background: rgb(var(--color-silver));                         /* background color */
-    --badge-color: rgb(var(--color-text));                                    /* text color */
+    --badge-background: rgb(var(--color-silver));                             /* background color */
+    --badge-color: rgb(var(--color-text-unused));                             /* text color */
     --badge-rounding: 3px;                                                    /* corner rounding */
     --badge-font: Overpass;                                                   /* font */
 
@@ -15,42 +13,55 @@
     --color-foreground: 0,0,0,.5;
     --color-foreground-grey: 0,0,0,.5;
     --color-foreground-grey-dark: 0,0,0,0.5;
-    --color-text: 53, 142, 218;
-    --color-text-ash: 210,213,216;
+    --color-text: 210,213,216;
+    --color-text-unused: 53, 142, 218;
     --color-text-light: 46,135,218;
     --color-text-lightest: 46, 135, 255;
-    /*--color-green: var(--color-text-lightest);*/
+    --color-green: 100,250,250;
 } 
 
-/*background*/
+/* background */
 body {
     background: linear-gradient(rgb(var(--color-background),0.5),rgb(var(--color-background),0.5)), url(https://i.imgur.com/HDUpxWD.jpeg) center/100% fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*banner*/
+/* names */
+.name[data-v-1cc2919e]{
+    font-family: stay in square;
+    font-size: 50px;
+    margin: 0;
+}
+.name[data-v-77aecf0c]{
+    font-family: Overpass;
+}
+
+/* bio */
+.about .content-wrap {
+    max-height: none !important;
+    background: rgba(0,0,0,0.8);
+}
+
+/* banner */
 .banner[data-v-1cc2919e]{
     background-image: none !important;  
     background-color: rgb(36,37,56,0);
 }
 .banner-content h1.name {
-    filter: drop-shadow(0px 0px 6px rgb(81, 185, 245));
+    filter: drop-shadow(0px 0px 8px rgb(120, 250, 250));
 }
 .banner .avatar {
     order: 0;
 }
 .banner .banner-content::after {
-    content: "三玖";
-    background: rgba(var(--color-blue),.7);
-    border-radius: 4px;
-    color: rgb(var(--color-white));
-    padding: 4px 7px;
-    margin-bottom: 20px;
-    margin-right: 16px;
-    font-size: 1.2rem;
+    content: "『Cringe Lord』";
+    color: rgb(var(--color-green));
+    margin-bottom: 15px;
+    margin-right: 0px;
+    font-size: 2.7rem;
     font-family: Overpass;
-    font-weight: 600;
+    font-weight: 800;
     cursor: text;
     order: 2;
 }
@@ -62,7 +73,7 @@ body {
 }
 
 /* badges */
-.header > .name:after {content: "Lurker";}                                              /* badge for everyone */
+.header > .name:after {content: "Traveller";}                                              /* badge for everyone */
 .header > a[href="/user/Artemis/"].name:after {content: "Cringe Lord";}                 /* badge for me */
 
 /* badge for others */
@@ -88,40 +99,6 @@ body {
 .header > a[href="/user/celeoste/"].name:after 
 /*more get added in here*/ {
     content: "Reviewer";
-}
-
-/*names*/
-.name[data-v-1cc2919e]{
-    font-family: stay in square;
-    font-size: 60px;
-    margin: 0;
-}
-.name[data-v-77aecf0c]{
-    font-family: Overpass;
-}
-
-/* bio */
-.about .content-wrap {
-    max-height: none !important;
-    background: rgba(0,0,0,0.8);
-}
-
-/* Chrome scrollbar */
-::-webkit-scrollbar {
-    width: 6px;
-    background: #01232d;
-}
-::-webkit-scrollbar-corner {
-    background: #01232d;
-}
-::-webkit-scrollbar-thumb {
-    background: #ff6f00;
-    --webkit-border-radius: 1ex;
-}
-
-/*Hides hoh download button*/
-.hohDownload {
-    display: none;
 }
 
 /* navbar */
@@ -209,6 +186,7 @@ body {
     background-repeat: no-repeat;
     background-position: 70% 15%;
 }
+
 /* footer */
 #app .wrap .footer {
     background: rgb(var(--color-foreground));
@@ -236,4 +214,22 @@ a:hover {
 }
 .wrap > .time {
     color: rgb(var(--color-text));
+}
+
+/* Chrome scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #01232d;
+}
+::-webkit-scrollbar-corner {
+    background: #01232d;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6f00;
+    --webkit-border-radius: 1ex;
+}
+
+/*Hides hoh download button*/
+.hohDownload {
+    display: none;
 }
