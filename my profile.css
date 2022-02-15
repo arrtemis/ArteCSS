@@ -1,5 +1,6 @@
 /*Imports*/
 @import url("https://anzuftnw.github.io/files/user-badges.css");
+@import url("https://anzuftnw.github.io/anilist-css/plugins/fake-donator/main.css");
 
 
 /*background*/
@@ -19,6 +20,8 @@ background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-bac
 .header > .name:after {content: "Lurker";}                                 /* badge for everyone */
 .header > a[href="/user/Anzu/"].name:before {content: "Mr.";}               /* prefix for user anzu */
 .header > a[href="/user/Anzu/"].name:after {content: "Certified Nerd 📚";}  /* badge for user anzu */
+.header > a[href="/user/Artemis/"].name:after {content: "Cringe Lord";}  /* badge for me */
+
 
 /* settings */
 :root {
@@ -31,7 +34,7 @@ background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-bac
 /*names*/
 .name[data-v-1cc2919e]{
     font-family: stay in square;
-    font-size: 60px;
+    font-size: 55px;
     margin: 0;
 }
 
@@ -60,4 +63,17 @@ background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-bac
 
 .about .content-wrap {
     max-height: none !important;
+}
+
+/*Fake Donator Badge*/
+/* SETTINGS */
+:root {
+/* Custom Profile Badge */
+    --cpb-toggle: none;
+    --cpb-text: "Cringe Lord";
+
+/* Custom Donator Badge */
+    --cdb-toggle: none;
+    --cdb-text: "Cringe Lord";
+    --cdb-rainbow: default;
 }
