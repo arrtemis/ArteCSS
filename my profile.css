@@ -24,7 +24,7 @@
 
 /*background*/
 body {
-    background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-background),0.8)), url(https://i.imgur.com/HDUpxWD.jpeg) center/100% fixed;
+    background: linear-gradient(rgb(var(--color-background),0.5),rgb(var(--color-background),0.5)), url(https://i.imgur.com/HDUpxWD.jpeg) center/100% fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,6 +33,9 @@ body {
 .banner[data-v-1cc2919e]{
     background-image: none !important;  
     background-color: rgb(36,37,56,0);
+}
+.banner-content h1.name {
+    filter: drop-shadow(0px 0px 6px rgb(81, 185, 245));
 }
 .banner .avatar {
     order: 0;
@@ -69,19 +72,23 @@ body {
 .header > a[href="/user/Kartsydai/"].name:after {content: "also besto friendo";}        /* badge for kart */
 .header > a[href="/user/Kanjo/"].name:after {content: "Elder";}                         /* badge for Kanjo */
 .header > a[href="/user/Robiracer/"].name:after {content: "wobby wobby";}               /* badge for wobby */
-.header > a[href="/user/leilana/"].name:after {content: "esteemed designer guest";}     /* badge for leilana */
-.header > a[href="/user/KusogakiEvents/"].name:after {content: "bot";}                  /* badge for KCbot */
+.header > a[href="/user/leilana/"].name:after {content: "Esteemed designer guest";}     /* badge for leilana */
+.header > a[href="/user/KusogakiEvents/"].name:after {content: "Bot";}                  /* badge for KCbot */
 
 /* badge for the reviewers */
-.header > a[href="/user/annahoj/"].name:after {content: "Lord of the Reviewers";}
-.header > a[href="/user/Raycenerr/"].name:after {content: "Lord of the Reviewers";}
-.header > a[href="/user/BaconCheesecake/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/draboko/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/caiyune/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/Goldiizz/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/qeziz/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/CelestialQueen/"].name:after {content: "Esteemed Reviewer";}
-.header > a[href="/user/celeoste/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/annahoj/"].name:after,
+.header > a[href="/user/Raycenerr/"].name:after {
+  content: "Lord of the Reviewers";
+}
+.header > a[href="/user/BaconCheesecake/"].name:after,
+.header > a[href="/user/draboko/"].name:after,
+.header > a[href="/user/caiyune/"].name:after,
+.header > a[href="/user/Goldiizz/"].name:after,
+.header > a[href="/user/CelestialQueen/"].name:after,
+.header > a[href="/user/celeoste/"].name:after 
+/*more get added in here*/ {
+    content: "Reviewer";
+}
 
 /*names*/
 .name[data-v-1cc2919e]{
@@ -96,7 +103,7 @@ body {
 /* bio */
 .about .content-wrap {
     max-height: none !important;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,0.8);
 }
 
 /* Chrome scrollbar */
@@ -140,13 +147,15 @@ body {
     background: rgba(40,30,30,.5) !important;
 }
 
-
 /* content */
-.list-stats, .about > .content-wrap, .activity-entry > .wrap, .genre-overview, .activity-history, .load-more, .el-textarea, .markdown-editor, .favourites-wrap, .reply {
+.list-stats,
+.about > .content-wrap,
+.activity-entry > .wrap,
+.genre-overview, .activity-history, .load-more, .el-textarea, .markdown-editor, .favourites-wrap, .reply {
     border: 1px solid rgb(81, 185, 245);
 }
 .user .overview {
-    grid-template-columns: calc(45% - 40px) 55%!important;
+    grid-template-columns: calc(45% - 45px) 55%!important;
 }
 .overview .favourites > .favourites-wrap {
     background: rgb(var(--color-foreground)) !important;
@@ -166,7 +175,7 @@ body {
 .favourites.preview .favourites-wrap {
     display: block !important;
     margin-bottom: 25px !important;
-    padding: 20px !important;
+    padding: 33px !important;
     padding-bottom: 0 !important;
     padding-right: 0 !important;
 }
@@ -176,8 +185,8 @@ body {
     justify-content: center;
     align-items: center;
     color: rgba(255,255,255,.6);
-    font-weight: 800;
-    font-size: 6rem;
+    font-weight: 600;
+    font-size: 4rem;
 }
 .overview .favourite.studio::after {
     display: none;
@@ -186,44 +195,25 @@ body {
     background: url("https://cdn.discordapp.com/attachments/824261675552604210/844269872917381180/thumb-1920-717957.png");
     background-size: cover;
     background-repeat: repeat;
-    background-position: 0% 70%
-}
-.site-theme-dark .overview .favourite.studio[href="/studio/43/ufotable"] {
-    background: url("https://cdn.discordapp.com/attachments/824261675552604210/844270549273149530/wallpapersden.com_saber-fategrand-order-series_2759x1637.jpg");
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position: 40% 7%
+    background-position: 0% 70%;
 }
 .site-theme-dark .overview .favourite.studio[href="/studio/44/Shaft"] {
     background: url("https://cdn.discordapp.com/attachments/824261675552604210/844271265538768977/714776.jpg");
     background-size: 1000%;
     background-repeat: no-repeat;
-    background-position: 35% 10.5%
+    background-position: 35% 10.5%;
 }
 .site-theme-dark .overview .favourite.studio[href="/studio/11/MADHOUSE"] {
     background: url("https://cdn.discordapp.com/attachments/824261675552604210/844274697339666502/hqjf7l.jpg");
     background-size: 160%;
     background-repeat: no-repeat;
-    background-position: 70% 15%
+    background-position: 70% 15%;
 }
-.site-theme-dark .overview .favourite.studio[href="/studio/314/White-Fox"] {
-    background: url("https://media.discordapp.net/attachments/824261675552604210/844276474160218112/Steins-Gate.jpg?width=870&height=544");
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: 40% 28%;
-}
-.user-page-unscoped.red .progress .bar {
-    background: linear-gradient(270deg,#df0000,#500);
-}
-.wrap > .time {
-    color: rgb(var(--color-text));
-}
-
 /* footer */
 #app .wrap .footer {
     background: rgb(var(--color-foreground));
     color: rgb(var(--color-text));
-    border-top: 1px solid #900;
+    border-top: 1px solid rgb(81, 185, 245);
 }
 .footer > .container {
     justify-content: space-between;
@@ -241,4 +231,9 @@ body {
 a:hover {
     color: rgb(var(--color-text-lightest));
 }
-
+.user-page-unscoped.red .progress .bar {
+    background: linear-gradient(270deg,rgb(53, 142, 218),rgb(81, 185, 245));
+}
+.wrap > .time {
+    color: rgb(var(--color-text));
+}
