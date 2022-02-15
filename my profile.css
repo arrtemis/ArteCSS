@@ -9,14 +9,7 @@
     --badge-rounding: 3px;                                                    /* corner rounding */
     --badge-font: Overpass;                                                   /* font */
 
-/* colors */
-    --genre-color-one: #74cf73;
-    --genre-color-two: #f3a6f3;
-    --genre-color-thr: #bb97d3;
-    --genre-color-fou: #e9a55e;
-    --genre-color-fiv: #ffe599;
-    --genre-color-six: #dc1313;
-    
+/* colors */    
     --color-background: 0,0,0,.5;
     --color-foreground: 0,0,0,.5;
     --color-foreground-grey: 0,0,0,.5;
@@ -85,7 +78,7 @@ body {
     background: rgba(0,0,0,.5);
     color: rgb(var(--color-text));
     top: 0 !important;
-    border-bottom: 1px solid rgb(0, 25, 187);
+    border-bottom: 1px solid rgb(81, 185, 245);
 }
 
 .nav-wrap {
@@ -94,7 +87,7 @@ body {
 }
 
 .logo img {
-    content: url("https://cdn.discordapp.com/attachments/819867125878620170/844247752241184788/825824568106680380.png");
+    content: url("https://cdn.discordapp.com/emojis/541528618518446090.gif");
     width: 50px !important;
     height: 50px !important;
     transition: 1s linear;
@@ -112,7 +105,6 @@ body {
     background: rgba(40,30,30,.5) !important;
 }
 
-
 /* badges */
 .header > .name:after {content: "Lurker";}                                              /* badge for everyone */
 .header > a[href="/user/Artemis/"].name:after {content: "Cringe Lord";}                 /* badge for me */
@@ -124,13 +116,19 @@ body {
 .header > a[href="/user/kartsydai/"].name:after {content: "also besto friendo";}        /* badge for kart */
 .header > a[href="/user/Kanjo/"].name:after {content: "Elder";}                         /* badge for Kanjo */
 .header > a[href="/user/Robiracer/"].name:after {content: "wobby wobby";}               /* badge for wobby */
+.header > a[href="/user/leilana/"].name:after {content: "esteemed designer guest";}     /* badge for leilana */
+.header > a[href="/user/KusogakiEvents/"].name:after {content: "bot";}                  /* badge for KCbot */
 
 /* badge for the reviewers */
 .header > a[href="/user/annahoj/"].name:after {content: "Lord of the Reviewers";}
-.header > a[href="/user/Baconcheesecake/"].name:after {content: "Reviewer";}
-.header > a[href="/user/draboko/"].name:after {content: "Reviewer";}
-.header > a[href="/user/caiyune/"].name:after {content: "Reviewer";}
-.header > a[href="/user/Goldizz/"].name:after {content: "Reviewer";}
+.header > a[href="/user/Raycenerr/"].name:after {content: "Lord of the Reviewers";}
+.header > a[href="/user/BaconCheesecake/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/draboko/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/caiyune/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/Goldiizz/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/qeziz/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/CelestialQueen/"].name:after {content: "Esteemed Reviewer";}
+.header > a[href="/user/celeoste/"].name:after {content: "Esteemed Reviewer";}
 
 /* names */
 .name[data-v-1cc2919e]{
@@ -140,6 +138,12 @@ body {
 }
 .name[data-v-77aecf0c]{
     font-family: Overpass;
+}
+
+/* bio */
+.about .content-wrap {
+    max-height: none !important;
+    background: rgba(0,0,0,.8);
 }
 
 /* Chrome scrollbar */
@@ -160,74 +164,12 @@ body {
     display: none;
 }
 
-/* fuck scrolling */
-.about .content-wrap {
-    max-height: none !important;
-}
 /* content */
-#app {
-    background: url(https://i.imgur.com/Hz1BaE3.png) center center / 100% fixed;
-}
-#app > .content.container > .user {
-    background: none !important;
-}
 .list-stats, .about > .content-wrap, .activity-entry > .wrap, .genre-overview, .activity-history, .load-more, .el-textarea, .markdown-editor, .favourites-wrap, .reply {
     border: 1px solid rgb(81, 185, 245);
 }
 .user .overview {
     grid-template-columns: calc(45% - 40px) 55%!important;
-}
-#app .about .content-wrap {
-    background: rgba(0,0,0,.8);
-	max-height: none;
-}
-.genres .genre:nth-child(1) .name {
-    background: var(--genre-color-one) !important;
-}
-.genres .genre:nth-child(1) .amount {
-    color: var(--genre-color-one) !important;
-}
-.percentage-bar .percentage:nth-child(1) {
-    background: var(--genre-color-one) !important;
-}
-.genres .genre:nth-child(2) .name {
-    background: var(--genre-color-two) !important;
-}
-.genres .genre:nth-child(2) .amount {
-    color: var(--genre-color-two) !important;
-}
-.percentage-bar .percentage:nth-child(2) {
-    background: var(--genre-color-two) !important;
-}
-.genres .genre:nth-child(3) .name {
-    background: var(--genre-color-thr) !important;
-}
-.genres .genre:nth-child(3) .amount {
-    color: var(--genre-color-thr) !important;
-}
-.percentage-bar .percentage:nth-child(3) {
-    background: var(--genre-color-thr) !important;
-}
-.genres .genre:nth-child(4) .name {
-    background: var(--genre-color-fou) !important;
-}
-.genres .genre:nth-child(4) .amount {
-    color: var(--genre-color-fou) !important;
-}
-.percentage-bar .percentage:nth-child(4) {
-    background: var(--genre-color-fou) !important;
-}
-.genres .genre:nth-child(5) .name {
-    background: var(--genre-color-fiv) !important;
-}
-.genres .genre:nth-child(5) .amount {
-    color: var(--genre-color-fiv) !important;
-}
-.percentage-bar .percentage:nth-child(5) {
-    background: var(--genre-color-fiv) !important;
-}
-.percentage-bar .percentage:nth-child(6) {
-    background: var(--genre-color-six) !important;
 }
 .overview .favourites > .favourites-wrap {
     background: rgb(var(--color-foreground)) !important;
