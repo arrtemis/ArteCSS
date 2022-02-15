@@ -1,0 +1,144 @@
+/*beginning*/
+.list-preview-wrap:nth-child(1){
+    display:none;
+}
+
+/*line 726*/
+.markdown-editor > [title="Image"]{
+	color: #95e2f1;
+}
+.markdown-editor > [title="WebM Video"]{
+    color: #7cc20d;
+}
+.markdown-editor > [title="Youtube Video"]{
+    color: #f30000;
+}
+
+/*line 1784*/
+.hohSearchResult.manga{
+	color: rgb(98, 226, 243);
+}
+/* line 1790*/
+.hohSearchResult.manga:hover{
+	background-color: rgba(98, 226, 243,0.3);
+}
+/*line 1797*/
+.hohSearchResult.manga.selected{
+	background-color: rgba(98, 226, 243, 0.3);
+	cursor: initial;
+}
+
+/*starts at line 3517*/
+/*if(useScripts.CSSgreenManga){
+	moreStyle.textContent += `*/
+.review-card:hover .banner[data-src*="/media/manga/"] + .content > .header{
+	color: rgb(158, 216, 252);
+/*}*/
+.review-card:hover .banner[data-src*="/media/anime/"] + .content > .header{
+	color: rgb(var(--color-blue));
+}
+.user .review-card:hover .banner[data-src*="/media/anime/"] + .content > .header{
+	color: rgb(61,180,242);
+}
+.activity-markdown a[href^="https://anilist.co/manga/"],
+.activity-markdown a[href^="https://anilist.co/search/manga"],
+.reply-markdown a[href^="https://anilist.co/manga/"],
+.reply-markdown a[href^="https://anilist.co/search/manga"]{
+	color: rgb(98, 226, 243);
+}
+.activity-manga_list > div > div > div > div > .title,
+.hohPinned .list .title[href^="/manga/"]{
+	color: rgba(98, 226, 243)!important;
+}
+.media .relations .cover[href^="/manga/"] + div div{
+	color: rgba(98, 226, 243);
+}
+.media .relations .cover[href^="/anime/"] + div div{
+	color: rgba(var(--color-blue));
+}
+.media .relations .cover[href^="/manga/"]{
+	border-bottom-style: solid;
+	border-bottom-color: rgb(98, 226, 243);
+	border-bottom-width: 2px;
+}
+.character-wrap .role-card:hover .title[href^="/anime/"]{
+	color: rgb(var(--color-blue)) !important;
+}
+.character-wrap .role-card .title[href^="/manga/"],
+.character-wrap .role-card:hover .title[href^="/manga/"],
+.media-roles .media .content:hover[href^="/manga/"] .name{
+	color: rgb(98, 226, 243) !important;
+}
+.media .relations.small .cover[href^="/manga/"]::after{
+	position:absolute;
+	left:1px;
+	bottom:3px;
+	content:"";
+	border-style: solid;
+	border-color: rgba(98, 226, 243);
+	border-width: 2px;
+}
+.media .relations .cover[href^="/anime/"]{
+	border-bottom-style: solid;
+	border-bottom-color: rgba(var(--color-blue));
+	border-bottom-width: 2px;
+}
+.media .relations .cover div.image-text{
+	margin-bottom: 2px!important;
+	border-radius: 0px!important;
+	padding-bottom: 8px!important;
+	padding-top: 8px!important;
+	font-weight: 500!important;
+}
+.media-embed[data-media-type="manga"] .title{
+	color: rgba(98, 226, 243);
+}
+.media-manga .actions .list{
+	background: rgba(98, 226, 243);
+}
+.media-manga .sidebar .review.button{
+	background: rgba(98, 226, 243);
+}
+.media-manga .container .content .nav .link{
+	color: rgba(98, 226, 243);
+}
+.hover-manga:hover{
+	color: rgba(98, 226, 243)!important;
+}
+.home .recent-reviews + div .cover[href^="/manga/"] + .content .info-header{
+	color: rgba(98, 226, 243);
+}
+.recommendations-wrap .recommendation-pair-card a[href^="/manga/"]:hover .title{
+	color: rgba(98, 226, 243);
+}
+
+	/*`*/
+
+/*line 4213*/
+.activity-manga_list > div > div > div > div > .title{
+	color: rgba(98, 226, 243)!important;
+}
+
+/*line 4216*/
+.markdown-editor > [title="Image"]{
+	color: #95e2f1;
+}
+.markdown-editor > [title="WebM Video"]{
+    color: #7cc20d;
+}
+.markdown-editor > [title="WebM Video"]:hover{
+    color: #7dc20dc5;
+}
+.markdown-editor > [title="Youtube Video"]{
+    color: #f30000;
+}
+.markdown-editor > [title="Youtube Video"]:hover{
+    color: #f30000c5;
+}
+
+/*commented out lines 4336-4340*/
+/*.medialist.table .row{
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-color: rgb(var(--color-text),0.5);
+}*/
