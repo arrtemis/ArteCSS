@@ -1,0 +1,63 @@
+/*Imports*/
+@import url("https://anzuftnw.github.io/files/user-badges.css");
+
+
+/*background*/
+body {
+background: linear-gradient(rgb(var(--color-background),0.8),rgb(var(--color-background),0.8)), url(https://i.imgur.com/HDUpxWD.jpeg) center/100% fixed;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner[data-v-1cc2919e]{
+    background-image: none !important;
+    background-color: rgb(36,37,56,0);
+}
+
+/*custom badge*/
+/* badges */
+.header > .name:after {content: "Lurker";}                                 /* badge for everyone */
+.header > a[href="/user/Anzu/"].name:before {content: "Mr.";}               /* prefix for user anzu */
+.header > a[href="/user/Anzu/"].name:after {content: "Certified Nerd 📚";}  /* badge for user anzu */
+
+/* settings */
+:root {
+  --badge-background: rgb(var(--color-background));                         /* background color */
+  --badge-color: rgb(var(--color-text));                                    /* text color */
+  --badge-rounding: 3px;                                                    /* corner rounding */
+  --badge-font: Overpass;                                                   /* font */
+}
+
+/*names*/
+.name[data-v-1cc2919e]{
+    font-family: stay in square;
+    font-size: 60px;
+    margin: 0;
+}
+
+.name[data-v-77aecf0c]{
+    font-family: Overpass;
+}
+
+
+/* Chrome scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #01232d;
+}
+::-webkit-scrollbar-corner {
+    background: #01232d;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6f00;
+    -webkit-border-radius: 1ex;
+}
+
+/*Hides hoh download button*/
+.hohDownload {
+    display: none;
+}
+
+.about .content-wrap {
+    max-height: none !important;
+}
