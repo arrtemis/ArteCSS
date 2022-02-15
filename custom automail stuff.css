@@ -33,7 +33,7 @@
 	moreStyle.textContent += `*/
 .review-card:hover .banner[data-src*="/media/manga/"] + .content > .header{
 	color: rgb(158, 216, 252);
-/*}*/
+}
 .review-card:hover .banner[data-src*="/media/anime/"] + .content > .header{
 	color: rgb(var(--color-blue));
 }
