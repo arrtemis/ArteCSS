@@ -87,8 +87,7 @@ body {
 .header > a[href="/user/KusogakiEvents/"].name:after {content: "Bot";}                  /* badge for KCbot */
 
 /* badge for the reviewers */
-.header > a[href="/user/annahoj/"].name:after,
-.header > a[href="/user/Raycenerr/"].name:after {
+.header > a[href="/user/annahoj/"].name:after {
   content: "Lord of the Reviewers";
 }
 .header > a[href="/user/BaconCheesecake/"].name:after,
@@ -96,10 +95,13 @@ body {
 .header > a[href="/user/caiyune/"].name:after,
 .header > a[href="/user/Goldiizz/"].name:after,
 .header > a[href="/user/CelestialQueen/"].name:after,
-.header > a[href="/user/celeoste/"].name:after 
+.header > a[href="/user/celeoste/"].name:after
 /*more get added in here*/ {
     content: "Reviewer";
 }
+
+.header > a[href="/user/liliphobic/"].name:after{content: "Bread Connoiseur Reviewer";}
+
 
 /* navbar */
 #nav {
